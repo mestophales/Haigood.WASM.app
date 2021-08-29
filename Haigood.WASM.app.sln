@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haigood.WASM.app", "Haigood.WASM.app.csproj", "{D2C4EC3C-DBE2-4949-B0C1-E317C7DA4457}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BFB7BF61-A83D-4136-BA5B-B075ED4E8A1D} = {BFB7BF61-A83D-4136-BA5B-B075ED4E8A1D}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haigood.WASM.App.IdentityServer", "..\Haigood.WASM.App.IdentityServer\Haigood.WASM.App.IdentityServer.csproj", "{BFB7BF61-A83D-4136-BA5B-B075ED4E8A1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2C4EC3C-DBE2-4949-B0C1-E317C7DA4457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C4EC3C-DBE2-4949-B0C1-E317C7DA4457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C4EC3C-DBE2-4949-B0C1-E317C7DA4457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C4EC3C-DBE2-4949-B0C1-E317C7DA4457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB7BF61-A83D-4136-BA5B-B075ED4E8A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB7BF61-A83D-4136-BA5B-B075ED4E8A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB7BF61-A83D-4136-BA5B-B075ED4E8A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB7BF61-A83D-4136-BA5B-B075ED4E8A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4706BFF4-50C2-4D4C-B09C-844696B8E394}
+	EndGlobalSection
+EndGlobal
