@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -7,6 +8,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Haigood.WASM.app
 {
@@ -18,6 +20,18 @@ namespace Haigood.WASM.app
             builder.RootComponents.Add<App>("#app");
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+            builder.Services.AddHttpClient("haigoodwasmapi")
+                .AddHttpMessageHandler(sp =>
+                {
+                var handler = sp.GetService<AuthorizationMessageHandler>()
+                .ConfigureHandler(
+                    authorizedUrls: new[] { "https://localhost:5004" },
+                    scopes: new[] { "haigoodwasmapi" });
+                return handler;
+                });
+
+            builder.Services.AddScoped(sp => sp.GetService<IHttpClientFactory>().CreateClient("haigoodwasmapi"));
 
             builder.Services.AddOidcAuthentication(options =>
             {

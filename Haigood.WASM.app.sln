@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haigood.WASM.app", "Haigood
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Haigood.WASM.App.IdentityServer", "..\Haigood.WASM.App.IdentityServer\Haigood.WASM.App.IdentityServer.csproj", "{BFB7BF61-A83D-4136-BA5B-B075ED4E8A1D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaigoodWASMApi", "..\HaigoodWASMApi\HaigoodWASMApi.csproj", "{C29E8B03-E88B-4A7E-9901-A83A99A8D6B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{BFB7BF61-A83D-4136-BA5B-B075ED4E8A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFB7BF61-A83D-4136-BA5B-B075ED4E8A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB7BF61-A83D-4136-BA5B-B075ED4E8A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C29E8B03-E88B-4A7E-9901-A83A99A8D6B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29E8B03-E88B-4A7E-9901-A83A99A8D6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29E8B03-E88B-4A7E-9901-A83A99A8D6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C29E8B03-E88B-4A7E-9901-A83A99A8D6B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
