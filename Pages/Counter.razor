@@ -6,8 +6,22 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<hr/>
+
+<Card Header="Counter">
+    <Body>
+    <p class="card-text">Current count: @currentCount</p>
+    </Body>
+    <Footer>
+        <button class="btn btn-primary" @onclick="IncrementCount">Click Me</button>
+    </Footer>
+
+</Card>
+
 @code {
     private int currentCount = 0;
+
+    //private string count => $"Current count: {currentCount}";
 
     private void IncrementCount()
     {

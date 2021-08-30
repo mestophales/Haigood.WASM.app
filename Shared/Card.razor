@@ -1,0 +1,33 @@
+﻿<h3>Card</h3><br/>
+<div class="card" style="width: 18rem">
+
+    <div class="card-header">@Header</div>
+
+    <div class="card-body">
+        @Body
+    </div>
+
+    <div class="card-footer">
+        @Footer
+    </div>
+
+</div>
+
+
+
+@code {
+
+    [Parameter]
+
+    public string Header { get; set; }
+
+    [Parameter]
+
+    public RenderFragment Body { get; set; }
+
+    [Parameter]
+
+    public RenderFragment Footer { get; set; }
+
+}
+
